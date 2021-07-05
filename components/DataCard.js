@@ -61,7 +61,7 @@ export default function DataCard(props) {
     },
   });
   const dataDelHandler = () => {
-    fetch("https://expense-app-api-v1.herokuapp.com/api/del/" + id);
+    fetch("API URL/del/" + id);
     props.onRefresh();
   };
 
