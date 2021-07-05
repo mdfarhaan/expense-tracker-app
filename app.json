@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Account",
+    "icon": "./assets/uniacc.png",
+    "version": "0.0.1",
+    "slug": "Account",
+    "ios": {
+      "bundleIdentifier": "com.app.acc",
+      "buildNumber": "1.0.1"
+    },
+    "android": {
+      "package": "com.app.acc",
+      "versionCode": 1
+    }
+  }
+}
