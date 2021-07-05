@@ -90,7 +90,7 @@ export default function Add(props) {
         date: date,
       }),
     };
-    fetch("https://expense-app-api-v1.herokuapp.com/api/post/", requestOptions);
+    fetch("API URL", requestOptions);
 
     setTitle("");
     setAmt(0);
