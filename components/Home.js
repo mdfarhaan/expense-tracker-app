@@ -8,7 +8,7 @@ export default function Home() {
   const [totalExpense, setTotalExpense] = useState(0);
 
   const fetchData = () => {
-    fetch("https://expense-app-api-v1.herokuapp.com/api/view/")
+    fetch("API URL/api/view/")
       .then((response) => response.json())
       .then((data) => {
         var newData = data.reverse();
@@ -17,9 +17,9 @@ export default function Home() {
   };
 
   const updateData = () => {
-    fetch("https://expense-app-api-v1.herokuapp.com/api/totalupdate/").then(
+    fetch("API URL/api/totalupdate/").then(
       () => {
-        fetch("https://expense-app-api-v1.herokuapp.com/api/total/")
+        fetch("API URL/api/total/")
           .then((response) => response.json())
           .then((data) => {
             setTotalExpense(data[0]["total"]);
